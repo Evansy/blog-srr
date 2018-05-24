@@ -1,0 +1,57 @@
+
+@charset 'utf-8';
+@import '~scss/base/var';
+
+.first-page{
+    height: 100vh;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: $font-white;
+    background-image: url(https://olmcfg2fj.qnssl.com/main-banner.jpg);
+    // background-attachment: fixed;
+    background-size: 100%; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    // 背景图上的点
+    .first-page-bgcover{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpmZmUxMmQxZC04ZWFjLTRlNjktYTQ3Ny05OGEyZWMzYjgxZjkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OEUwNzBGQkFGQjE3MTFFNjk0NjJGM0VGQkFGNTFBRkEiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QzE0OThDQUFGQjE2MTFFNjk0NjJGM0VGQkFGNTFBRkEiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoTWFjaW50b3NoKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOmMxOTZhOGFkLTBmYTAtNGZlYi1hZDE2LTlkMTNmN2Q4NDM5NyIgc3RSZWY6ZG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjQzOTY2ODc5LTNlNDgtMTE3YS1iZmJiLWM5MDk5NzdiZTE4ZSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PnhJQQcAAAApSURBVHjaYmBgYJCCYhjAy2diIBEwopkEAs/w8Um2gWHUD4PCDwABBgBFgQgyBsYeWgAAAABJRU5ErkJggg==);
+        background-attachment: fixed;
+        background-repeat:repeat;
+    }
+
+    // 口号语
+    .first-page-slogan{
+        text-align: center;
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: $font-white;
+        transform: translateX(-50%) translateY(-50%);
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: 1px;
+    }
+
+    .slogan-english{
+        font-size: 22px;
+        padding: 14px;
+        font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
+    }
+
+    .slogan-chinese{
+        font-size: 18px;
+        font-family: 'Georgia', serif, Helvetica, "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
+    }
+}

@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+// vue 数据未加载时避免显示占位符
+[v-cloak] {
+    display: none;
+}
+
+* {
+    box-sizing: inherit;
+    outline: inherit;
+    -webkit-touch-callout: inherit;
+    -webkit-tap-highlight-color: inherit;       // 点击反馈延时
+    // user-select: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    display: block;
+    // overflow: hidden;
+    // overflow-y: scroll;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;       // 点击反馈延时
+    box-sizing: border-box;
+    // user-select: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	//-webkit-overflow-scrolling: auto;     // 滑动页面具有回弹效果
+    -webkit-overflow-scrolling: touch;      // 滑动页面具有回弹效果
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;         // chrome内核浏览器 字体小于12px会保持12px 禁止浏览器调整字体大小
+}
+
+body{
+    // font-family: "Microsoft YaHei UI Light", "Microsoft YaHei", 'Avenir', "Helvetica Neue", "Helvetica", "Arial", "sans-serif" !important;
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+    font-size: 14px;
+    line-height: 1.3;
+    color: $font-base;
+	min-width: 3.2rem;
+	// max-width: 5.4rem;
+	margin: 0 auto !important;
+    // background-color: $bg-body;
+    position: relative;
+    &.modal-open {
+        position: fixed;
+        width: 100%;
+    }
+}
+
+#__nuxt{
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    &.flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .3s ease;
+    &:link,
+    &:visited{
+        color: $font-base;
+    }
+    &:hover,
+    &:active{
+        color: $base-color;
+    }
+}
+
+ul,
+ol,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+    padding: 0
+}
+
+ul,
+ol{
+    list-style: none;
+    padding-left: 0;
+}

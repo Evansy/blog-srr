@@ -1,0 +1,40 @@
+@charset 'utf-8';
+@import '../base/var';
+
+.article-detail{
+    padding-top: 60px;
+
+    // 文章头部区域
+    .article-detail-header{
+        padding: 20px 0;
+    }
+
+    // 文章标题
+    .article-tile{
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+
+    // 文章头部背景
+    // .article-header-bg{
+    //     background-image: url(~assets/main-banner1.jpg);
+    //     background-size: 120%;
+    //     background-position: center center;
+    //     background-repeat: no-repeat;
+    //     min-height: 300px;
+    //     filter: blur(10px);
+    // }
+    
+    // 文章内容区域
+    .article-detail-content{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        line-height: 1.8;
+    }
+    
+    // 代码高亮样式
+    .hljs{
+        overflow: hidden;
+        overflow-x: auto;
+    }
+}

@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+.no-data
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    -webkit-overflow-scrolling: auto;   // 禁用滑动页面具有回弹效果
+
+    &-icon
+    {
+        font-size: 80px;
+        width: 80px;
+        height: 80px;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .erro-msg
+    {
+        color: #C7C7CD;
+        min-width: 40%;
+        text-align: center;
+
+        &-word
+        {
+            display: inline-block;
+            padding-top: 15px;
+        }
+    }
+}

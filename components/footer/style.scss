@@ -1,0 +1,29 @@
+@charset 'utf-8';
+@import '~assets/styles/base/var';
+
+// 菜单顶部导航条
+.views-footer{
+    background-color: $bg-footer;
+    padding: 40px 0;
+
+    .views-footer-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .footer-left{
+        line-height: 3;
+        font-size: 12px;
+        color: $font-grey;
+    }
+
+    .footer-links-icon{
+        padding: 0 6px;
+        .iconfont{
+            font-size: 28px;
+            color: $font-grey;
+        }
+    }
+}

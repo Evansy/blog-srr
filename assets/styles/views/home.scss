@@ -1,0 +1,13 @@
+@charset 'utf-8';
+@import '../base/var';
+
+// 首页区域
+.views-home{
+    position: relative;
+    min-height: 100%;
+    .views-home-content{
+        padding-top: 60px;
+        padding-bottom: 80px; 
+        max-width: 990px;
+    }
+}

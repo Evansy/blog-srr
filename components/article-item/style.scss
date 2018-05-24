@@ -1,0 +1,91 @@
+@charset 'utf-8';
+@import '~assets/styles/base/var';
+
+.components-article-item{
+    max-width: 990px;
+    background-color: $bg-white;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    margin-bottom: 40px;
+    border-radius: 2px;
+    overflow: hidden;
+    .article-item-banner{
+        // background-image: url(~assets/main-banner1.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 0;
+        width: 100%;
+        padding-top: 31%;
+        position: relative;
+    }
+
+    .article-item-title{
+        padding: 25px;
+        color: $font-white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 34px;
+        line-height: 40px;
+        font-weight: 400;
+        text-shadow: 1px 1px 8px #444;
+        cursor: pointer;
+    }
+
+    .article-item-meta{
+        line-height: 2;
+        padding: 10px 16px;
+        color: $font-grey;
+        padding-bottom: 0;
+    }
+
+    .article-item-content{
+        margin: 16px;
+        margin-top: 6px;
+        margin-bottom: 25px;
+        line-height: 2;
+        color: $font-deepgrey;
+        position: relative;
+    }
+    
+    .article-item-text{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
+
+    .article-read-more{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        line-height: 1.2;
+        padding: 0 15px;
+        background-color: #fff;
+    }
+}
+
+@media screen and (max-width: 840px){
+    .components-article-item{
+        .article-item-title{
+            font-size: 20px;
+            padding: 15px;
+            line-height: 1;
+        }
+
+        .article-read-more{
+            position: relative;
+            right: 0;
+            padding-left: 0;
+        }
+
+        .article-item-text,
+        .article-item-meta{
+            line-height: 1.6;
+        }
+
+        .article-item-content{
+            margin-bottom: 12px;
+        }
+    }
+}

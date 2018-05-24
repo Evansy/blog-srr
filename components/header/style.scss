@@ -1,0 +1,120 @@
+@charset 'utf-8';
+@import '~assets/styles/base/var';
+
+// 菜单顶部导航条
+.views-navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    z-index: 10;
+    color: $font-white;
+    background-color: transparent;
+    transition: all .5s ease;
+
+    .views-navbar-item{
+        color: $font-white;
+    }
+    // logo及MORE
+    .views-navbar-wrapper{
+        transition: all .5s ease;
+        &.hide{
+            transform: translateY(-60px);
+        }
+    }
+
+    // 半透明背景
+    &.trans-bg{
+        background-color: rgba($color: $bg-white, $alpha: .9);
+        color: $font-base;
+        .views-navbar-item:link,
+        .views-navbar-item:visited{
+            color: $font-base;
+        }
+
+        .views-navbar-more{
+            color: $font-base;
+        }
+
+        .views-navbar-item:hover,
+        .views-navbar-item:active,
+        .views-navbar-more:hover,
+        .views-navbar-more:active,{
+            color: $base-color;
+        }
+
+        .views-navbar-item.always{
+            color: $font-base;
+        }
+        
+    }
+
+    &.font-base{
+        color: $font-base;
+        .views-navbar-item,
+        .views-navbar-more,
+        .views-navbar-item.always{
+           color: $font-base;
+        }   
+    }
+
+    // 导航栏部分
+    .views-navbar-nav{
+        text-align: center;
+    }
+
+    // 导航栏链接部分
+    .views-navbar-item{
+        padding: 0 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        &.font-brand{
+            font-family: 'Montserrat', "Open Sans", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
+        }
+        &.always{
+            color: $font-white;
+            cursor: default;
+            text-transform: none;
+            font-family: 'Georgia', "Open Sans", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
+        }
+    }
+
+    // logo部分
+    .views-navbar-logo{
+        position: absolute;
+        top: 15px;
+        left: 30px;
+        background-image: url('~assets/images/favicon.png');
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        &:hover{
+            background-color: $bg-white;
+        }
+    }
+
+    // 右侧菜单文字
+    .views-navbar-more{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-right: 74px;
+        cursor: pointer;
+        color: $font-white;
+    }
+
+    // 右侧菜单图标
+    .views-navbar-menu{
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 0 30px;
+        cursor: pointer;
+        // pointer-events: none;
+    }
+}
+

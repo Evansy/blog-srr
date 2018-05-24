@@ -1,0 +1,35 @@
+@charset 'utf-8';
+
+@media only screen and (max-width: 1024px){
+    .views-navbar-nav {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    #__nuxt{
+        .page-content{
+            padding-bottom: 122px;
+        }
+        .views-footer{
+            margin-top: -122px;
+        }
+        .views-home-content{
+            padding-bottom: 0;
+        }
+        .views-footer{
+            padding: 25px 0;
+            .footer-left{
+                text-align: center;
+                flex: 1;
+            }
+            .footer-links-icon {
+                display: none;
+            }
+        }
+
+        .components-article-item .article-item-content{
+            padding-bottom: 16px;
+        }
+    }
+}

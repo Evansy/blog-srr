@@ -1,0 +1,24 @@
+@charset "utf-8";
+@import '~assets/styles/base/var';
+
+/* 文字两侧横线 */
+.line-through
+{
+    padding: 15px;
+
+    fieldset
+    {
+        width: 44%;
+        padding: 0;
+        border-width: 0;
+        border-top: 1px solid $border-color;
+        margin: 0 auto;
+        
+        legend
+        {
+            text-align: center;
+            padding: 0 16px;
+            font-size: 12px;
+        }
+    }
+}
