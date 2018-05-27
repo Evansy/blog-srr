@@ -81,7 +81,7 @@ module.exports = {
   */
   loading: { color: "#3B8070" },
 
-  css: [{ src: "~assets/styles/common.scss", lang: "scss" }],
+  css: [{ src: "~assets/styles/common.less", lang: "less" }],
   /*
   ** Build configuration
   */

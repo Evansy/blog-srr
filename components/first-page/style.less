@@ -1,13 +1,13 @@
 
 @charset 'utf-8';
-@import '~scss/base/var';
+@import '~assets/styles/base/var';
 
 .first-page{
     height: 100vh;
     max-width: 100%;
     overflow: hidden;
     position: relative;
-    background-color: $font-white;
+    background-color: @font-white;
     background-image: url(https://olmcfg2fj.qnssl.com/main-banner.jpg);
     // background-attachment: fixed;
     background-size: 100%; 
@@ -34,7 +34,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        color: $font-white;
+        color: @font-white;
         transform: translateX(-50%) translateY(-50%);
         text-transform: uppercase;
         font-style: normal;

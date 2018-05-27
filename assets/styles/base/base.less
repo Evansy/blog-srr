@@ -38,11 +38,11 @@ body{
     font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
     font-size: 14px;
     line-height: 1.3;
-    color: $font-base;
+    color: @font-base;
 	min-width: 3.2rem;
 	// max-width: 5.4rem;
 	margin: 0 auto !important;
-    // background-color: $bg-body;
+    // background-color: @bg-body;
     position: relative;
     &.modal-open {
         position: fixed;
@@ -90,11 +90,11 @@ a{
     transition: all .3s ease;
     &:link,
     &:visited{
-        color: $font-base;
+        color: @font-base;
     }
     &:hover,
     &:active{
-        color: $base-color;
+        color: @base-color;
     }
 }
 

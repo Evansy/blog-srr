@@ -19,9 +19,9 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "node-sass": "^4.9.0",
-    "nuxt": "^1.4.0",
-    "sass-loader": "^7.0.1"
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "nuxt": "^1.4.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

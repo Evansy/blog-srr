@@ -14,7 +14,7 @@
     // background-color: transparent;
     &.show{
         transform: translate(-100%);
-        // background-color: rgba($color: $bg-footer, $alpha: .6);
+        // background-color: rgba(@color: @bg-footer, @alpha: .6);
     }
 }
 
@@ -35,8 +35,8 @@
     //     transform: translate(-280px);
     // }
     .slide-menu-header{
-        color: $font-white;
-        background-color: $base-color;
+        color: @font-white;
+        background-color: @base-color;
         background-image: url(https://olmcfg2fj.qnssl.com/sidebar-header.png);
         background-size: cover;
         background-position: center center;
@@ -55,7 +55,7 @@
         height: 54px;
         border-radius: 50% 50%;
         margin: 15px;
-        background-color: $bg-white;
+        background-color: @bg-white;
     }
 
     .menu-header-button{
@@ -67,7 +67,7 @@
         top: 0;
         font-size: 20px;
         cursor: pointer;
-        color: $font-base;
+        color: @font-base;
     }
 
     .slide-menu-item,
@@ -88,36 +88,36 @@
         text-overflow: ellipsis;
         &:link,
         &:visited {
-            color: $font-base;
+            color: @font-base;
         }
 
         &:hover,
         &:active {
-            color: $base-color;
+            color: @base-color;
             .iconfont{
-                color: $base-color;
+                color: @base-color;
             }
         }
 
         &.active{
-            color: $base-color;
+            color: @base-color;
             .iconfont{
-                color: $base-color;
+                color: @base-color;
             }
         }
     }
 
     .slider-menu-icon{
         font-size: 30px;
-        color: $font-grey;
+        color: @font-grey;
         margin-right: 32px;
         vertical-align: middle;
     }
 
     .slide-menu-sublist{
         // padding-left: 16px;
-        color: $font-base;
-        // background-color: $bg-slider;
+        color: @font-base;
+        // background-color: @bg-slider;
         &.show .slide-menu-subitem{
             height: 48px;
             // margin-top: 8px;
@@ -130,7 +130,7 @@
         overflow: hidden;
         padding-left: 32px;
         &:hover{
-            background-color: $bg-slider;
+            background-color: @bg-slider;
         }
     }
 
@@ -138,6 +138,6 @@
         display: block;
         margin: 8px 0;
         height: 1px;
-        background-color: $border-deep;
+        background-color: @border-deep;
     }
 }

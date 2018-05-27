@@ -9,7 +9,7 @@
     height: 60px;
     line-height: 60px;
     z-index: 10;
-    color: $font-white;
+    color: @font-white;
     // logo及MORE
     .views-navbar-wrapper{
         transition: all .5s ease;
@@ -20,20 +20,20 @@
 
     // 半透明背景
     &.trans-bg{
-        background-color: rgba($color: $bg-white, $alpha: .9);
-        color: $font-base;
+        background-color: fade(@bg-white, 90%);
+        color: @font-base;
         .views-navbar-item:link,
         .views-navbar-item:visited{
-            color: $font-base;
+            color: @font-base;
         }
 
         .views-navbar-item:hover,
         .views-navbar-item:active{
-            color: $base-color;
+            color: @base-color;
         }
 
         .views-navbar-item.always{
-            color: $font-base;
+            color: @font-base;
         }
     }
 
@@ -51,7 +51,7 @@
             font-family: 'Montserrat', "Open Sans", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
         }
         &.always{
-            color: $font-white;
+            color: @font-white;
             cursor: default;
             text-transform: none;
             font-family: 'Georgia', "Open Sans", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
@@ -71,7 +71,7 @@
         background-repeat: no-repeat;
         background-position: center center;
         &:hover{
-            background-color: $bg-white;
+            background-color: @bg-white;
         }
     }
 
