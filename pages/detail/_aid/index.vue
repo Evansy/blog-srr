@@ -11,9 +11,7 @@
             
         </div>
         <div class="container">
-            <keep-alive>
-                <changyan :sid="aid"></changyan>
-            </keep-alive>
+            <changyan :sid="aid"></changyan>
         </div>
     </div>
 </template>
@@ -22,8 +20,11 @@
 import { changyan } from '~/components';
 import { articleDetail } from '~/assets/apis';
 
+import highlight from "~/assets/directive/highlight";
+
 export default {
     name: 'article-detail',
+    scrollToTop: true,
     head: {
         link: [
             { rel: 'stylesheet', href: '//cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css' }
@@ -48,12 +49,7 @@ export default {
         }
     },
     directives: {
-        highlight: function (el) {
-            let blocks = el.querySelectorAll('pre code');
-            blocks.forEach((block)=>{
-                hljs.highlightBlock(block)
-            });
-        }
+        highlight
     },
     components: {
         changyan

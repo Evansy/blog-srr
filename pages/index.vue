@@ -22,37 +22,37 @@
 </template>
 
 <script>
-import { articleItem, lineThrough, firstPage } from '~/components';
+import { articleItem, lineThrough, firstPage } from "~/components";
 
-import { articleList } from '~/assets/apis';
+import { articleList } from "~/assets/apis";
 
 export default {
-  name: 'views-home',
-  data(){
+    name: "views-home",
+    data() {
         return {
             articleDatas: [],
             allLoaded: false,
             pageIndex: 1,
             pageSize: 10
-        }
+        };
     },
-    async asyncData ({ params, error }) {
+    async asyncData({ params, error }) {
         const content = await articleList({
-                params: {
-                    payload: {
-                        page: 1,
-                        value: '全部',
-                        limit: 10
-                    }
+            params: {
+                payload: {
+                    page: 1,
+                    value: "全部",
+                    limit: 10
                 }
-            });
+            }
+        });
 
-        if(content && content.length > 0){
+        if (content && content.length > 0) {
             return {
                 articleDatas: content,
                 allLoaded: content.length < 10,
                 pageIndex: 2
-            }
+            };
         }
     },
     components: {
@@ -62,36 +62,34 @@ export default {
     },
     methods: {
         // 获取文章列表
-        getArticleList(){
+        getArticleList() {
             articleList({
                 params: {
                     payload: {
                         page: this.pageIndex,
-                        value: '全部',
+                        value: "全部",
                         limit: this.pageSize
                     }
                 }
             }).then(res => {
-                if(res && res.length > 0){
+                if (res && res.length > 0) {
                     this.articleDatas = this.articleDatas.concat(res);
 
-                    if(res.length < 10){
+                    if (res.length < 10) {
                         this.allLoaded = true;
                     }
 
-                    this.pageIndex++;                    
+                    this.pageIndex++;
                 }
             });
         },
 
         // 加载更多
-        onLoadMore(){
-
-        }
+        onLoadMore() {}
     }
 };
 </script>
 
 <style lang="scss">
-    @import '~assets/styles/views/home';
+@import "~assets/styles/views/home";
 </style>

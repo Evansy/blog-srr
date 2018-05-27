@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="layout-contents">
     <!-- 顶部栏 BEGIN -->
     <navbar @on-more-click="toggleSlider"></navbar>
     <!-- 顶部栏 END -->

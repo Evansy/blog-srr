@@ -15,7 +15,7 @@
 
 html,
 body {
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     outline: none;
     display: block;
@@ -57,6 +57,20 @@ body{
     display: block;
     position: relative;
     overflow-x: hidden;
+}
+
+.page-content{
+    min-height: 100vh;
+    padding-bottom: 152px;
+}
+
+.views-footer{
+    margin-top: -152px;
+}
+
+.layout-contents{
+    min-height: 100vh;
+    width: 100%;
 }
 
 .container{
