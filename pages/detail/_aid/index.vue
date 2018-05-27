@@ -12,7 +12,7 @@
         </div>
         <div class="container">
             <keep-alive>
-                <changyan v-if="loaded" :sid="aid"></changyan>
+                <changyan :sid="aid"></changyan>
             </keep-alive>
         </div>
     </div>
@@ -24,6 +24,14 @@ import { articleDetail } from '~/assets/apis';
 
 export default {
     name: 'article-detail',
+    head: {
+        link: [
+            { rel: 'stylesheet', href: '//cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css' }
+        ],
+        script: [
+            { src: '//cdn.bootcss.com/highlight.js/8.0/highlight.min.js' }
+        ],
+    },
     data() {
         return{
             aid: null,
@@ -36,7 +44,6 @@ export default {
         
         return {
             content,
-            loaded: true,
             aid: +params.aid
         }
     },

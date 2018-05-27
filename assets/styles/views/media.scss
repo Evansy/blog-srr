@@ -6,7 +6,19 @@
     }
 }
 
-@media only screen and (max-width: 400px){
+@media screen and (min-width:351px) and (max-width: 840px){
+    #__nuxt{
+        .views-home-content{
+            padding-bottom: 10px;
+        }
+
+        .components-article-item:last-of-type{
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 350px){
     #__nuxt{
         .page-content{
             padding-bottom: 122px;
@@ -26,10 +38,6 @@
             .footer-links-icon {
                 display: none;
             }
-        }
-
-        .components-article-item .article-item-content{
-            padding-bottom: 16px;
         }
     }
 }

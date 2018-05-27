@@ -16,6 +16,10 @@ export default {
             let sohudiv = document.getElementById('SOHUCS');
             sohudiv && changyan();
         })
+    },
+    destroyed(){
+        window.changyan && (window.changyan = undefined);
+        window.cyan && (window.cyan = undefined);
     }
 }
 </script>

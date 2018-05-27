@@ -4,6 +4,11 @@
   "description": "Evan's Blog",
   "author": "Evan <skcy@vip.qq.com>",
   "private": true,
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0"
+    }
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
