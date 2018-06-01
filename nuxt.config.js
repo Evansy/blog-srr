@@ -35,12 +35,14 @@ module.exports = {
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { rel: "dns-prefetch", href:"//bootcss.com/" },
+      { rel: "dns-prefetch", href:"//alicdn.com/" },
       {
-        rel: "stylesheet",
+        rel: "stylesheet preload",
         href: "//cdn.bootcss.com/normalize/8.0.0/normalize.min.css"
       },
       {
-        rel: "stylesheet",
+        rel: "stylesheet preload",
         href: "//at.alicdn.com/t/font_484739_f4p6lg316dzk6gvi.css"
       }
     ]
