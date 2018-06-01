@@ -6,10 +6,10 @@
                 <p>鄂ICP备15007105号</p>
             </div>
             <div class="footer-right">
-                <a class="footer-links-icon" href="https://github.com/Evansy" target="_blank" rel="noopener" title="github">
+                <a class="footer-links-icon" href="https://github.com/Evansy" target="_blank" rel="noopener noreferrer" title="github">
                     <i class="iconfont icon-git"></i>
                 </a>
-                <a class="footer-links-icon" href="https://weibo.com/sk608" target="_blank" rel="noopener" title="微博">
+                <a class="footer-links-icon" href="https://weibo.com/sk608" target="_blank" rel="noopener noreferrer" title="微博">
                     <i class="iconfont icon-weibo"></i>
                 </a>
             </div>
