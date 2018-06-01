@@ -12,10 +12,10 @@
                 <a class="views-navbar-item always" href="javascript: void(0);">
                     <i>Always</i>  CREATIVE.
                 </a>
-                <a class="views-navbar-item" href="https://github.com/Evansy" target="_blank" title="github">
+                <a class="views-navbar-item" href="https://github.com/Evansy" target="_blank" rel="noopener" title="github">
                     <i class="iconfont icon-git"></i>
                 </a>
-                <a class="views-navbar-item" href="https://weibo.com/sk608" target="_blank" title="微博">
+                <a class="views-navbar-item" href="https://weibo.com/sk608" target="_blank" rel="noopener" title="微博">
                     <i class="iconfont icon-weibo"></i>
                 </a>
                 <a class="views-navbar-item always" href="javascript: void(0);"><i>Welcome!</i></a>
